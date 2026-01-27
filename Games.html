@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Games</title>
+
+<style>
+body {
+    background: #111;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ====== WRAPPER ====== */
+.cards {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+/* ====== CARD ====== */
+.Base {
+    position: relative;
+    width: 170px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+
+    filter: blur(4.5px);
+    transition:
+        width 0.35s ease,
+        filter 0.35s ease;
+}
+
+/* IMAGE */
+.Base img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* TEXT OVERLAY */
+.Base p {
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+
+    
+    font-size: 15px;
+    font-weight: bold;
+
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+}
+
+/* ====== HOVER ====== */
+.Base:hover {
+    width: 300px;
+    filter: blur(0);
+}
+
+.Base:hover p {
+    opacity: 1;
+}
+
+/* ====== OTHER CARDS MOVE BACK ====== */
+.cards:hover .Base:not(:hover) {
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+button{
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.9px);
+        -webkit-backdrop-filter: blur(11.9px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        width: 50px;
+        height: 30px;
+        font-size: 15px;
+        position: relative;
+        right: -15px;
+        bottom: 635px;
+    }
+    button:hover{
+        background: rgba(255, 255, 255, 0.384);
+    }
+</style>
+</head>
+<body>
+    <div class="cards">
+        <div class="Base" style="color: rgba(255, 255, 255, 0.95);" id="HM" onclick="window.open('https://store.steampowered.com/app/219150/Hotline_Miami/', '_blank')">
+            <img src="HM.png" alt="Hotline Miami">
+            <p>
+                <text style="color: rgb(255, 160, 255);">Hotline Miami</text> is a fast-paced top-down action game set in a neon-soaked 1980s Miami. Players take on the role of a masked hitman, executing brutal missions against the criminal underworld while navigating a surreal, violent, and psychedelic world.
+            </p>
+        </div>
+
+        <div class="Base" style="color: rgba(255, 255, 255, 0.95);" id="Faith" onclick="window.open('https://store.steampowered.com/app/1179080/FAITH_The_Unholy_Trinity/', '_blank')">
+            <img src="Faith.png" alt="Faith">
+            <p>
+                <text style="color: rgb(255, 160, 160);">FAITH</text> is a game about a young exorcist confronting demonic forces and uncovering dark secrets in a haunted world. Players explore eerie locations, solve puzzles, and face terrifying supernatural entities, all while experiencing a retro-inspired, psychological horror atmosphere.
+            </p>
+        </div>
+
+        <div class="Base" style="color: rgba(255, 255, 255, 0.95);" id="Mouth" onclick="window.open('https://store.steampowered.com/app/245390/I_Have_No_Mouth_and_I_Must_Scream/', '_blank')">
+            <img src="IHNMAIMS.png" alt="IHNMAIMS">
+            <p>
+                <text style="color: rgb(160, 201, 255);">I Have No Mouth, and I Must Scream</text> is a game about five survivors trapped and tormented by a sadistic supercomputer named AM after humanity has been wiped out. Players navigate each character’s personal nightmare, making choices to survive while facing psychological horror, moral dilemmas, and extreme suffering.
+            </p>
+        </div>
+
+        <div class="Base" style="color: rgba(255, 255, 255, 0.95);" id="Cry" onclick="window.open('https://store.steampowered.com/app/223710/Cry_of_Fear/', '_blank')">
+            <img src="Cry.png" alt="Cry">
+            <p>
+                <text style="color: rgb(131, 131, 131);">Cry of Fear</text> is a game about a young man trapped in a nightmarish city after a car accident. Players must explore dark streets, avoid and fight horrifying monsters, solve puzzles, and uncover the truth behind his terrifying visions. It’s a psychological horror experience focused on survival, fear, and mystery.
+            </p>
+        </div>
+
+        <div class="Base" style="color: rgba(255, 255, 255, 0.95);" id="Stray" onclick="window.open('https://store.steampowered.com/app/1332010/Stray/', '_blank')">
+            <img src="stray.jpg" alt="Stray">
+            <p>
+                <text style="color: rgb(255, 222, 160);">Stray</text> is a game about a stray cat navigating a futuristic, neon-lit city inhabited by robots. Players explore rooftops, solve environmental puzzles, and uncover the mysteries of this abandoned world while experiencing life from a cat’s perspective.
+        </div>
+    </div>
+    <button class="back" onclick="window.location.href='index.html'">Back</button>
+</body>
+</html>

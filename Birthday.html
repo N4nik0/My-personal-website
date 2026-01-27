@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+</head>
+<style>
+body {
+    background-image: url('party.png');
+    background-size: cover;
+    overflow: hidden;
+}
+.text{
+    font-size: 40px;
+    color: rgb(46, 157, 255);
+    text-align: center;
+    margin-top: 250px;
+    position: relative;
+}
+#demo{
+    font-size: 60px;
+    color: rgba(46, 255, 203, 0.507);
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+text{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 910px;
+    font-weight: bold;
+    left: 1590px;
+    opacity: 40%;
+}
+.gif {
+    position: absolute;
+    top: 750px;
+    left: 0px;
+}
+button{
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.9px);
+        -webkit-backdrop-filter: blur(11.9px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        width: 50px;
+        height: 30px;
+        font-size: 15px;
+        position: absolute;
+        left: 15px;
+        bottom: 900px;
+    }
+    button:hover{
+        background: rgba(255, 255, 255, 0.384);
+    }
+
+</style>
+<body>
+    <div class="text">My Birthday is in:</div>
+    <div id="demo"></div>
+    <div class="code"><script src="BirthdayCountdown.js"></script></div>
+    <text>it's January 16th if you don't wanna count ;)</text>
+    <div class="gif"><img src="miku-point.gif" alt="miku pointing" style="width:200px;height:200px;"></div>
+    <button onclick="window.location.href='index.html'">Back</button>
+</body>
+</html>

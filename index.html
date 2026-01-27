@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-weight: bold;
+            color: antiquewhite;
+            background-color: rgba(140, 127, 255, 0.363);
+            width: 700px;
+            height: 800px;
+            position: relative;
+            left: 250px;
+            top: 20px;
+            border-radius: 10px;
+        }
+        .vibe {
+            position: absolute;
+            top: 760px;
+            left: 530px;
+            font-style: italic;
+            user-select: none;
+        }
+        button{
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.9px);
+        -webkit-backdrop-filter: blur(11.9px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        width: 250px;
+        height: 200px;
+        font-size: 15px;
+        position: absolute;
+        font-size: 30px;
+        color: red;
+        animation-name: Birthday;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    button:hover{
+        background: rgba(255, 255, 255, 0.384);
+    }
+    @keyframes Birthday {
+        0% {color: red;}
+        20% {color: yellow;}
+        40% {color: green;}
+        60% {color: purple;}
+        80% {color: orange;}
+        100% {color: blue;}
+    }
+    body{
+        background-color: rgb(48, 28, 163);
+    } 
+    </style>
+</head>
+    <body>
+        <div><text style="font-size: 35px;">Hello</text><img src="hello2.gif" alt="hello" width="50px" height="30px" style="position: absolute; left: 90px; top: 3px; user-select: none;"><br>Hi, my name is Kacper. I’m 16 and I’m a programmer from Poland. I love playing games and creating them, and right now (from the time i'm writing this) I’m working on a port of
+        <a style="color: red;" href="https://newblood.games/faith" target="_blank"><br>FAITH: The Unholy Trinity</a> for the PSP. If anyone is interested, feel free to text me and wait for my reply! I hate Unity, but I still use it 😔✌️ BUT i wanna change it to GameMaker<br><br>techfrik<br><br>that's it for now... :/<br>not much but something
+        <aside class="vibe" style="opacity: 6%;">Ashammed vibe coder,<br>NOT FOR LONG THO!</aside></div>
+        <header style="position: absolute; left: 1160px; bottom: 680px; font-weight: bold; color: rgb(0, 0, 0); font-size: 95px; z-index: 2; opacity: 70%; transform: scaleY(4.2); user-select: none;">I USE 3DS BTW</header>
+        <img src="1000005251.jpg" alt="Only hoping my friends from school will not see" width="700px" height="300px" style="position: absolute; left: 1150px; bottom: 580px; border-radius: 10px;">
+        <button onclick="window.location.href='Birthday.html'" style="right: 450px; bottom: 370px;">MY BIRTHDAY!</button>
+        <button onclick="window.location.href='MyGoals.html'" style="right: 300px; bottom: 150px;">MY GOALS!</button>
+        <button onclick="window.location.href='Games.html'" style="right: 150px; bottom: 370px;">MY FAV GAMES!</button>
+    </body>
+</html>
